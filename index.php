@@ -21,10 +21,33 @@ $user_data = check_login($con);
 </head>
 
 <body>
-  <h1 class="first-h">Good meowmeow
-    <?php echo $user_data['nickname']; ?>!
-  </h1>
+  <nav>
+    <div class="logo">
+      <a href="index.php">
+        <div>
+          <img src="img/smile (1).png" alt="Smiling Cat">
+          <p>MeowSite</p>
+        </div>
+      </a>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#">Breeds</a></li>
+      <li><a href="#">Game</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
+    </ul>
+  </nav>
+  <div class="homepage-h1">
+    <div>
+      <h1 class="first-h">Good meowmeow
+        <?php echo $user_data['nickname']; ?>!
+      </h1>
+      <img src="img/cat (11).png" alt="Cat cute pic">
+    </div>
+  </div>
+
   <a href="logout.php">Logout</a>
+
 </body>
 
 </html>

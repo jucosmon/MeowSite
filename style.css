@@ -129,3 +129,72 @@ body{
 .second-h2 h2{
     font-size: 35px;
 }
+
+/*homepage*/
+nav {
+    background-color: #FFE193;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .logo a div{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .logo a div img {
+    height: 50px;
+    margin-right: 10px;
+
+  }
+
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+  
+  }
+  
+  .cat-profile{
+    height: 25px;
+    width: auto;
+    overflow: hidden;
+  }
+  
+  .homepage-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homepage-h1 div{
+    display: flex;
+    align-items: center;
+  }
+
+  .homepage-h1 div img{
+    height: 60px;
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .homepage-h1 div h1{
+    font-size: 35px;
+  }
