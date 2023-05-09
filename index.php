@@ -12,6 +12,37 @@ $catGifData = json_decode($catGifData, true);
 
 // Extract the GIF URL
 $gifUrl = $catGifData[0]['url'];
+
+//making an array of funny cat video IDs in youtube
+$videoIds = [
+  "W6rmYlrU4lI",
+  "Wj5cEMfzGjQ",
+  "k9fudf1SSok",
+  "JxS5E-kZc2s",
+  "vSrCCXRq-jc",
+  "DaxhpRgPxwI",
+  "rYzrwy5JxxY",
+  "frfU-aPxSW0",
+  "atJPkF9KHYc",
+  "UZpz9y2FrsI",
+  "Gnm3hIcjiCQ",
+  "L3tsYC5OYhQ",
+  "vR_E91r1Ya4",
+  "yVrvUkYHEsg",
+  "Le2MGWRa_SE",
+  "encOEAJJ_5Q",
+  "Hvw2cNQUuUc",
+  "N-HzgTvRccA",
+  "9jmEJ98P3dg",
+  "lzFvrzNCU9Q",
+  "z0Peikz1Duw",
+  "Hweqfxsrgac",
+  "EyHCanIP_CI"
+];
+
+//get a random video ID
+$randomVideoId = $videoIds[array_rand($videoIds)];
+
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +70,7 @@ $gifUrl = $catGifData[0]['url'];
       </a>
     </div>
     <ul class="nav-list">
-      <li><a href="#">Breeds</a></li>
+      <li><a href="breeds.php">Breeds</a></li>
       <li><a href="#">Game</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
@@ -81,6 +112,25 @@ $gifUrl = $catGifData[0]['url'];
       <a href="#"><button id="paw"> <img src="img/pets.png" alt="Paw" id="paw-img"> </button></a>
       <a href="index.php"><button id="first_button">Next</button></a>
     </div>
+  </div>
+
+  <div class="youtube-video">
+    <div>
+      <img src="img/cat.png" alt="Funny cat back">
+      <h2>Time to paws what you're doing and watch this hilarious cat video!</h2>
+    </div>
+
+    <div id="video">
+      <iframe width="560" height="315" src='https://www.youtube.com/embed/<?php echo $randomVideoId ?>' frameborder='0'
+        allowfullscreen></iframe>
+    </div>
+    <div class=" buttons">
+      <a href="index.php"><button id="first_button">Next</button></a>
+    </div>
+  </div>
+
+  <div class="breed-button">
+    <a href="breeds.php"><button id="breed_button">Browse Cat Breeds</button></a>
   </div>
 
   <a href="logout.php">Logout</a>

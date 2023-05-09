@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
       }
     }
-    echo "Wrong meowsername";
+    echo "Invalid, that meowsername doesn't exist!!";
   } else {
     echo "Please enter some valid information!";
   }
