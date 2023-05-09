@@ -164,6 +164,7 @@ nav {
   .nav-list li {
     margin-left: 10px;
     margin-right: 20px;
+    
   }
   
   .nav-list li a {
@@ -187,6 +188,7 @@ nav {
   .homepage-h1 div{
     display: flex;
     align-items: center;
+    margin-top: 3%;
   }
 
   .homepage-h1 div img{
@@ -197,4 +199,61 @@ nav {
 
   .homepage-h1 div h1{
     font-size: 35px;
+  }
+
+ .random-facts{
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 50px;
+  background-color: #F4E9CB;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+ }
+
+  .random-facts div, .random-facts p{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #cat-gif{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    border-radius: 45px;
+    margin-top: 5px;
+    margin-bottom: 3%;
+  }
+  .random-facts div  h2{
+    color: #EB5757;
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  .random-facts div  img{
+    height: 40px;
+    margin-right: 10px;
+    
+  }
+  #paw-img {
+    height: 19px;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+  }
+  #paw{
+    margin: 0;
+    background-color: #FCCC4E;
+    padding: 10px;
+    padding-right: 6px;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
   }
