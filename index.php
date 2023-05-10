@@ -74,7 +74,7 @@ $randomVideoId = $videoIds[array_rand($videoIds)];
       <li><a href="breeds.php">Breeds</a></li>
       <li><a href="#">Game</a></li>
       <li><a href="about.php">About</a></li>
-      <li><a href="#"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
+      <li><a href="account.php"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
     </ul>
   </nav>
   <div class="homepage-h1">
@@ -138,7 +138,6 @@ $randomVideoId = $videoIds[array_rand($videoIds)];
       </a>
     </div>
   </div>
-  <a href="logout.php">Logout</a>
 </body>
 
 </html>

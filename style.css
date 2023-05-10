@@ -58,7 +58,7 @@ body{
 #signup-body{
     display: flex;
     align-items: center;
-    height: 100vh; /* Adjust the height as needed */
+    height: 90vh; 
 }
 
 .second-maindiv{
@@ -293,7 +293,7 @@ nav {
     padding-top: 20px;
   }
   .spacer {
-    height: 20px; /* Adjust the height as per your preference */
+    height: 20px; 
   }
 
   /* Cat breeds page */
@@ -427,4 +427,67 @@ nav {
 
 #github img{
   height: 70px;
+}
+
+/* Account Information Page */
+.account-body{
+  display: flex;
+    align-items: center;
+    height: 90vh;
+}
+.account-subbody{
+  margin: auto;
+}
+
+.account-h1{
+  display: flex;
+  align-items: center;
+}
+.account-h1 img{
+  height: 70px;
+  margin-right: 10px;
+}
+.account-h1 h1{
+  font-size: 40px;
+  font-weight: normal;
+}
+.account-h2{
+  background-color: #FFECD0;
+  border-radius: 50px;
+  border: solid black 5px;
+  padding: 5%;
+  margin-top: 1%;
+  margin-bottom: 7%;
+
+}
+.account-h2 div{
+  display: flex;
+  align-items: center;
+}
+.account-h2 div a img{
+  height: 30px;
+  margin-left: 20%;
+}
+.account-h2 div h2{
+  font-weight: normal;
+}
+
+.delete-button{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  
+}
+.delete-button a button{
+    font-family: 'Galindo', cursive;
+    background-color: #FCCC4E;
+    color: #EB5757;
+    padding: 10px 20px;
+    border: solid 3px;
+    border-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
 }

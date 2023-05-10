@@ -1,3 +1,11 @@
+<?php
+session_start();
+include("connection.php");
+include("functions.php");
+
+$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +34,8 @@
             <li><a href="breeds.php">Breeds</a></li>
             <li><a href="#">Game</a></li>
             <li><a href="about.php">About</a></li>
-            <li><a href="#"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
+            <li><a href="account.php"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a>
+            </li>
         </ul>
     </nav>
     <div class="breed-contents">
