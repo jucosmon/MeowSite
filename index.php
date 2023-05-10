@@ -42,6 +42,19 @@ $videoIds = [
 
 //get a random video ID
 $randomVideoId = $videoIds[array_rand($videoIds)];
+if (isset($_POST['nextButton'])) {
+  // Send a request to the Cat API to fetch a new random GIF
+  $url = 'https://api.thecatapi.com/v1/images/search';
+  $response = file_get_contents($url);
+  $data = json_decode($response, true);
+
+  if (!empty($data)) {
+    // Get the URL of the new GIF
+    $gifUrl = $data[0]['url'];
+    // Update the image source with the new GIF URL
+    echo "<script>document.getElementById('catGif').src = '$gifUrl';</script>";
+  }
+}
 
 ?>
 

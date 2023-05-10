@@ -283,7 +283,6 @@ nav {
   #video iframe{
     border-radius: 20px;
     border: 10px solid black;
-    border-width: ;
   }
   #video {
     margin-bottom: 2%;
@@ -378,4 +377,14 @@ nav {
   justify-content: center;
   margin-left: auto;
   margin-left: auto;
+}
+
+.img-breed{
+  max-width: 40%;
+  border-radius: 50px;
+  border: black solid 5px;
+}
+#breedName{
+  font-weight: normal;
+  color: #EB5757;
 }

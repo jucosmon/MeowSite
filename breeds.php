@@ -51,10 +51,9 @@
                     $breed = urlencode($_GET['breed']);
 
                     $apiUrl = "https://api.thecatapi.com/v1/breeds/search?q={$breed}";
-
                     $response = file_get_contents($apiUrl);
-
                     $data = json_decode($response, true);
+
 
 
                     if (!empty($data)) {
@@ -69,23 +68,34 @@
                         $childFriendly = $data[0]['child_friendly'];
                         $dogFriendly = $data[0]['dog_friendly'];
                         $intelligence = $data[0]['intelligence'];
-                        $healthIssues = $data[0]['health_issues'];
+                        $altNames = $data[0]['alt_names'];
 
-                        echo "<h2>{$breedName}</h2>";
+                        $breedId = $data[0]['id'];
+                        $imagesEndpoint = "https://api.thecatapi.com/v1/images/search?breed_id=" . $breedId;
+                        $response = file_get_contents($imagesEndpoint);
+                        $data = json_decode($response, true);
+
+                        $imageUrl = $data[0]['url'];
+
+                        echo "<h2 id=" . 'breedName' . ">{$breedName}</h2>";
+                        echo '<img src="' . $imageUrl . '" alt="Cat Breed Image" class= "img-breed">';
                         echo "<p>{$description}</p>";
                         echo "<div class='breed-list'><ul id='breedList'><li>Temperament: {$temperament}</li>
-                        
+                        <li>Alternative Names: {$altNames}</li>
                         <li>Origin: {$origin}</li>
                         <li>Life Span: {$lifeSpan} years</li>
-                        <li>Adaptability: {$adaptability}</li>
                         <li>Origin: {$origin}</li>
+                        <li>Adaptability Level: {$adaptability}</li>
                         <li>Affectionate Level: {$affectionLevel}</li>
                         <li>Child Friendly Level: {$childFriendly}</li>
                         <li>Dog Friendly Level: {$dogFriendly}</li>
                         <li>Intelligence Level: {$intelligence}</li>
-                        <li>Health Issues: {$healthIssues}</li>
-                        </ul></div>"
+                        
+                        </ul>
+                        </div>"
                         ;
+
+
 
                     } else {
                         // Breed not found
