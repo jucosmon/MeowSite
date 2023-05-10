@@ -129,12 +129,15 @@ $randomVideoId = $videoIds[array_rand($videoIds)];
     </div>
   </div>
 
-  <div class="breed-button">
-    <a href="breeds.php"><button id="breed_button">Browse Cat Breeds</button></a>
+  <div id="breed-button">
+    <div class="spacer"></div>
+    <div class="buttons">
+      <a href="breeds.php">
+        <button id="first_button">Explore Cat Breeds</button>
+      </a>
+    </div>
   </div>
-
   <a href="logout.php">Logout</a>
-
 </body>
 
 </html>

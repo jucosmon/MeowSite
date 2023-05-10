@@ -289,6 +289,13 @@ nav {
     margin-bottom: 2%;
   }
 
+  #breed-button{
+    display: block;
+    padding-top: 20px;
+  }
+  .spacer {
+    height: 20px; /* Adjust the height as per your preference */
+  }
 
   /* Cat breeds page */
 
@@ -299,6 +306,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  
 }
 
 .catbreed-maindiv{
@@ -352,4 +360,22 @@ nav {
 }
 .catbreed-h1 h1{
   font-size: 50px;
+}
+
+.result{
+  margin: 3% 5%;
+  padding: 2% 10%;
+  border-radius: 20px;
+  background-color: #F4E9CB;
+}
+
+#breedList{
+  text-align: start;
+}
+
+.breed-list{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-left: auto;
 }
