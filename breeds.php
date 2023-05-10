@@ -25,7 +25,7 @@
         <ul class="nav-list">
             <li><a href="breeds.php">Breeds</a></li>
             <li><a href="#">Game</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="#"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
         </ul>
     </nav>
@@ -84,7 +84,6 @@
                         <li>Alternative Names: {$altNames}</li>
                         <li>Origin: {$origin}</li>
                         <li>Life Span: {$lifeSpan} years</li>
-                        <li>Origin: {$origin}</li>
                         <li>Adaptability Level: {$adaptability}</li>
                         <li>Affectionate Level: {$affectionLevel}</li>
                         <li>Child Friendly Level: {$childFriendly}</li>

@@ -388,3 +388,43 @@ nav {
   font-weight: normal;
   color: #EB5757;
 }
+
+/*ABOUT PAGE*/
+.about{
+  text-align: center;
+  margin-left: auto;
+  margin-left: auto;
+}
+.about div{
+  margin: 0% 5%;
+  padding: 2% 10%; 
+  background-color: #F6E7C9;
+  border-radius: 50px;
+}
+.about h1{
+  font-weight: normal;
+  color: #EB5757;
+  font-size: 45px;
+}
+.about p{
+  font-size: larger;
+}
+.about p span{
+  color: #C86C00;
+}
+#catsleep{
+  display: flex;
+  justify-content: center;
+}
+#catsleep img{
+  height: 150px;
+}
+#github{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+#github img{
+  height: 70px;
+}
