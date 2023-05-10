@@ -37,38 +37,18 @@ $user_data = check_login($con);
             </li>
         </ul>
     </nav>
-    <div class="account-body">
-        <div class="account-subbody">
-            <div class="account-h1">
-                <img src="img/cat (14).png" alt="">
-                <h1>Your meowcount information</h1>
-            </div>
-            <div class="account-h2">
-                <div>
-                    <h2>Nickname:
-                        <?php echo $user_data['nickname']; ?>
-                    </h2>
-                    <a href="#"><img src="img/edit.png" alt=""></a>
-                </div>
-                <div>
-                    <h2>Meowsername:
-                        <?php echo $user_data['username']; ?>
-                    </h2>
-                    <a href="#"><img src="img/edit.png" alt=""></a>
-                </div>
-            </div>
-
-
-            <div class="delete-button">
-                <a href="logout.php"> <button>Logout Account</button> </a>
-            </div>
-            <div class="delete-button">
-                <?php $username = $user_data['username'] ?>
-                <a href="deletemessage.php"> <button>Delete Account</button></a>
+    <div class="delete-message">
+        <div>
+            <h1>Are you sure you want to delete your account?</h1>
+            <div><a href="delete.php">
+                    <h2>Yes</h2>
+                </a>
+                <a href="account.php">
+                    <h2>No</h2>
+                </a>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
