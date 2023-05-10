@@ -31,7 +31,7 @@ $user_data = check_login($con);
         </div>
         <ul class="nav-list">
             <li><a href="breeds.php">Breeds</a></li>
-            <li><a href="#">Game</a></li>
+
             <li><a href="about.php">About</a></li>
             <li><a href="account.php"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a>
             </li>
@@ -48,13 +48,13 @@ $user_data = check_login($con);
                     <h2>Nickname:
                         <?php echo $user_data['nickname']; ?>
                     </h2>
-                    <a href="#"><img src="img/edit.png" alt=""></a>
+                    <a href="newnickname.php"><img src="img/edit.png" alt=""></a>
                 </div>
                 <div>
                     <h2>Meowsername:
                         <?php echo $user_data['username']; ?>
                     </h2>
-                    <a href="#"><img src="img/edit.png" alt=""></a>
+                    <a href="new_username.php"><img src="img/edit.png" alt=""></a>
                 </div>
             </div>
 

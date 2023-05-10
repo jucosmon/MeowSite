@@ -72,7 +72,7 @@ $randomVideoId = $videoIds[array_rand($videoIds)];
     </div>
     <ul class="nav-list">
       <li><a href="breeds.php">Breeds</a></li>
-      <li><a href="#">Game</a></li>
+
       <li><a href="about.php">About</a></li>
       <li><a href="account.php"><img src="img/cat-animal.png" alt="Cat Account logo" class="cat-profile"> </a></li>
     </ul>
@@ -110,7 +110,9 @@ $randomVideoId = $videoIds[array_rand($videoIds)];
     <img src="<?php echo $gifUrl; ?>" alt="Random Cat gif" id="cat-gif">
 
     <div class="buttons">
-      <a href="#"><button id="paw"> <img src="img/pets.png" alt="Paw" id="paw-img"> </button></a>
+      <!-- cancelled this is supposedly used for saving specific cat facts but i dont have time for that so nahh
+        <a href="#"><button id="paw"> <img src="img/pets.png" alt="Paw" id="paw-img"> </button></a> 
+      -->
       <a href="index.php"><button id="first_button">Next</button></a>
     </div>
   </div>

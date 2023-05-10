@@ -434,6 +434,7 @@ nav {
   display: flex;
     align-items: center;
     height: 90vh;
+    margin: 0% 10%;
 }
 .account-subbody{
   margin: auto;
