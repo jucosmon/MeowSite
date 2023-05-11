@@ -48,13 +48,13 @@ $user_data = check_login($con);
                     <h2>Nickname:
                         <?php echo $user_data['nickname']; ?>
                     </h2>
-                    <a href="newnickname.php"><img src="img/edit.png" alt=""></a>
+                    <a href="newnickname.php"><img src="img/pen.png" alt=""></a>
                 </div>
                 <div>
                     <h2>Meowsername:
                         <?php echo $user_data['username']; ?>
                     </h2>
-                    <a href="new_username.php"><img src="img/edit.png" alt=""></a>
+                    <a href="new_username.php"><img src="img/pen.png" alt=""></a>
                 </div>
             </div>
 

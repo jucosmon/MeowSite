@@ -58,8 +58,7 @@ $user_data = check_login($con);
         </div>
     </div>
     <div id="github">
-        <a href="https://github.com/jucosmon/MeowSite" target="_blank"><img src="img/github (1).png"
-                alt="Github Link"></a>
+        <a href="https://github.com/jucosmon/MeowSite" target="_blank"><img src="img/github.png" alt="Github Link"></a>
     </div>
 </body>
 
